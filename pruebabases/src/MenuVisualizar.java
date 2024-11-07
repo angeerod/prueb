@@ -36,13 +36,6 @@ public class MenuVisualizar extends JFrame {
 
         JButton btnVisualizarCargo = new JButton("Visualizar Cargos");
         btnVisualizarCargo.setBounds(200, 180, 200, 40); // Coordenadas para el botón de visualizar cargo
-        btnVisualizarCargo.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                // Al hacer clic, abrir la ventana de consultar cargo
-                abrirVisualizarCargo();
-            }
-        });
         add(btnVisualizarCargo); // Añadir el botón al JFrame
 
         JButton btnVisualizarPedido = new JButton("Visualizar Pedidos");
@@ -63,11 +56,6 @@ public class MenuVisualizar extends JFrame {
         }
     });
     add(btnRegresar); // Añadir el botón al JFrame
-}
-
-private void abrirVisualizarCargo() {
-    VisualizarCargo visualizarCargo = new VisualizarCargo();
-    visualizarCargo.setVisible(true);
 }
 
 // Método para regresar al menú inicial
